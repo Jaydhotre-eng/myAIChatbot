@@ -19,7 +19,9 @@ import Markdown from 'react-markdown';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { sendMessageStream, type Message } from './services/geminiService';
-
+// Edited 
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+console.log("API KEY:", apiKey);
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
